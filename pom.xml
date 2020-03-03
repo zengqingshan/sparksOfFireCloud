@@ -11,6 +11,7 @@
 	<modules>
 		<module>microservice-discovery-eureka</module>
 		<module>microservice-user</module>
+		<module>microservice-alipay</module>
 	</modules>
 	
 	<properties>
