@@ -8,10 +8,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @SpringBootApplication
 @MapperScan("com.yiluyouni.cloud.dao")
 @EnableDiscoveryClient
-public class UserApplication {
+public class AlipayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(UserApplication.class, args);
+        SpringApplication.run(AlipayApplication.class, args);
     }
 
 }
