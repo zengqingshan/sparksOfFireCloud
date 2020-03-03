@@ -1,6 +1,7 @@
 package com.yiluyouni.cloud.idworker;
 
-import org.n3r.idworker.strategy.DayPrefixRandomCodeStrategy;
+
+import com.yiluyouni.cloud.idworker.strategy.DayPrefixRandomCodeStrategy;
 
 public class DayCode {
     static RandomCodeStrategy strategy;

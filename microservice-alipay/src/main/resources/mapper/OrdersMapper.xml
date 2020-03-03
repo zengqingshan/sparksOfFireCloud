@@ -139,7 +139,7 @@
       paid_time = #{paidTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <resultMap id="BaseResultMap" type="com.yiluyouni.cloud.microserviceuser.entity.Orders">
+  <resultMap id="BaseResultMap" type="com.yiluyouni.cloud.entity.Orders">
     <id column="id" jdbcType="VARCHAR" property="id" />
     <result column="order_num" jdbcType="VARCHAR" property="orderNum" />
     <result column="order_status" jdbcType="VARCHAR" property="orderStatus" />
@@ -164,7 +164,7 @@
     delete from orders
     where id = #{id,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Orders">
+  <insert id="insert" parameterType="com.yiluyouni.cloud.entity.Orders">
     insert into orders (id, order_num, order_status, 
       order_amount, paid_amount, product_id, 
       buy_counts, create_time, paid_time
@@ -174,7 +174,7 @@
       #{buyCounts,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, #{paidTime,jdbcType=TIMESTAMP}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Orders">
+  <insert id="insertSelective" parameterType="com.yiluyouni.cloud.entity.Orders">
     insert into orders
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -235,7 +235,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Orders">
+  <update id="updateByPrimaryKeySelective" parameterType="com.yiluyouni.cloud.entity.Orders">
     update orders
     <set>
       <if test="orderNum != null">
@@ -265,7 +265,7 @@
     </set>
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Orders">
+  <update id="updateByPrimaryKey" parameterType="com.yiluyouni.cloud.entity.Orders">
     update orders
     set order_num = #{orderNum,jdbcType=VARCHAR},
       order_status = #{orderStatus,jdbcType=VARCHAR},
@@ -277,7 +277,7 @@
       paid_time = #{paidTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <resultMap id="BaseResultMap" type="com.yiluyouni.cloud.microserviceuser.entity.Orders">
+  <resultMap id="BaseResultMap" type="com.yiluyouni.cloud.entity.Orders">
     <id column="id" jdbcType="VARCHAR" property="id" />
     <result column="order_num" jdbcType="VARCHAR" property="orderNum" />
     <result column="order_status" jdbcType="VARCHAR" property="orderStatus" />
@@ -302,7 +302,7 @@
     delete from orders
     where id = #{id,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Orders">
+  <insert id="insert" parameterType="com.yiluyouni.cloud.entity.Orders">
     insert into orders (id, order_num, order_status, 
       order_amount, paid_amount, product_id, 
       buy_counts, create_time, paid_time
@@ -312,7 +312,7 @@
       #{buyCounts,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, #{paidTime,jdbcType=TIMESTAMP}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Orders">
+  <insert id="insertSelective" parameterType="com.yiluyouni.cloud.entity.Orders">
     insert into orders
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -373,7 +373,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Orders">
+  <update id="updateByPrimaryKeySelective" parameterType="com.yiluyouni.cloud.entity.Orders">
     update orders
     <set>
       <if test="orderNum != null">
@@ -403,7 +403,7 @@
     </set>
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Orders">
+  <update id="updateByPrimaryKey" parameterType="com.yiluyouni.cloud.entity.Orders">
     update orders
     set order_num = #{orderNum,jdbcType=VARCHAR},
       order_status = #{orderStatus,jdbcType=VARCHAR},

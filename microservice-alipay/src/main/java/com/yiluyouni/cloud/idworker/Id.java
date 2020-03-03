@@ -1,6 +1,7 @@
 package com.yiluyouni.cloud.idworker;
 
-import org.n3r.idworker.strategy.DefaultWorkerIdStrategy;
+
+import com.yiluyouni.cloud.idworker.strategy.DefaultWorkerIdStrategy;
 
 public class Id {
     private static WorkerIdStrategy workerIdStrategy;

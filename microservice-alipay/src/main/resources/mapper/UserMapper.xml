@@ -68,7 +68,7 @@
       sex = #{sex,jdbcType=VARCHAR}
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <resultMap id="BaseResultMap" type="com.yiluyouni.cloud.microserviceuser.entity.User">
+  <resultMap id="BaseResultMap" type="com.yiluyouni.cloud.entity.User">
     <id column="id" jdbcType="VARCHAR" property="id" />
     <result column="username" jdbcType="VARCHAR" property="username" />
     <result column="sex" jdbcType="VARCHAR" property="sex" />
@@ -86,13 +86,13 @@
     delete from user
     where id = #{id,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="com.yiluyouni.cloud.microserviceuser.entity.User">
+  <insert id="insert" parameterType="com.yiluyouni.cloud.entity.User">
     insert into user (id, username, sex
       )
     values (#{id,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{sex,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.yiluyouni.cloud.microserviceuser.entity.User">
+  <insert id="insertSelective" parameterType="com.yiluyouni.cloud.entity.User">
     insert into user
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -117,7 +117,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.yiluyouni.cloud.microserviceuser.entity.User">
+  <update id="updateByPrimaryKeySelective" parameterType="com.yiluyouni.cloud.entity.User">
     update user
     <set>
       <if test="username != null">
@@ -129,13 +129,13 @@
     </set>
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.yiluyouni.cloud.microserviceuser.entity.User">
+  <update id="updateByPrimaryKey" parameterType="com.yiluyouni.cloud.entity.User">
     update user
     set username = #{username,jdbcType=VARCHAR},
       sex = #{sex,jdbcType=VARCHAR}
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <resultMap id="BaseResultMap" type="com.yiluyouni.cloud.microserviceuser.entity.User">
+  <resultMap id="BaseResultMap" type="com.yiluyouni.cloud.entity.User">
     <id column="id" jdbcType="VARCHAR" property="id" />
     <result column="username" jdbcType="VARCHAR" property="username" />
     <result column="sex" jdbcType="VARCHAR" property="sex" />
@@ -153,13 +153,13 @@
     delete from user
     where id = #{id,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="com.yiluyouni.cloud.microserviceuser.entity.User">
+  <insert id="insert" parameterType="com.yiluyouni.cloud.entity.User">
     insert into user (id, username, sex
       )
     values (#{id,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{sex,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.yiluyouni.cloud.microserviceuser.entity.User">
+  <insert id="insertSelective" parameterType="com.yiluyouni.cloud.entity.User">
     insert into user
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -184,7 +184,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.yiluyouni.cloud.microserviceuser.entity.User">
+  <update id="updateByPrimaryKeySelective" parameterType="com.yiluyouni.cloud.entity.User">
     update user
     <set>
       <if test="username != null">
@@ -196,7 +196,7 @@
     </set>
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.yiluyouni.cloud.microserviceuser.entity.User">
+  <update id="updateByPrimaryKey" parameterType="com.yiluyouni.cloud.entity.User">
     update user
     set username = #{username,jdbcType=VARCHAR},
       sex = #{sex,jdbcType=VARCHAR}

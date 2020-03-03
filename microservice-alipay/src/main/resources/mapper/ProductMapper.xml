@@ -68,7 +68,7 @@
       price = #{price,jdbcType=VARCHAR}
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <resultMap id="BaseResultMap" type="com.yiluyouni.cloud.microserviceuser.entity.Product">
+  <resultMap id="BaseResultMap" type="com.yiluyouni.cloud.entity.Product">
     <id column="id" jdbcType="VARCHAR" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="price" jdbcType="VARCHAR" property="price" />
@@ -86,13 +86,13 @@
     delete from product
     where id = #{id,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Product">
+  <insert id="insert" parameterType="com.yiluyouni.cloud.entity.Product">
     insert into product (id, name, price
       )
     values (#{id,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{price,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Product">
+  <insert id="insertSelective" parameterType="com.yiluyouni.cloud.entity.Product">
     insert into product
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -117,7 +117,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Product">
+  <update id="updateByPrimaryKeySelective" parameterType="com.yiluyouni.cloud.entity.Product">
     update product
     <set>
       <if test="name != null">
@@ -129,13 +129,13 @@
     </set>
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Product">
+  <update id="updateByPrimaryKey" parameterType="com.yiluyouni.cloud.entity.Product">
     update product
     set name = #{name,jdbcType=VARCHAR},
       price = #{price,jdbcType=VARCHAR}
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <resultMap id="BaseResultMap" type="com.yiluyouni.cloud.microserviceuser.entity.Product">
+  <resultMap id="BaseResultMap" type="com.yiluyouni.cloud.entity.Product">
     <id column="id" jdbcType="VARCHAR" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="price" jdbcType="VARCHAR" property="price" />
@@ -153,13 +153,13 @@
     delete from product
     where id = #{id,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Product">
+  <insert id="insert" parameterType="com.yiluyouni.cloud.entity.Product">
     insert into product (id, name, price
       )
     values (#{id,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{price,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Product">
+  <insert id="insertSelective" parameterType="com.yiluyouni.cloud.entity.Product">
     insert into product
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -184,7 +184,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Product">
+  <update id="updateByPrimaryKeySelective" parameterType="com.yiluyouni.cloud.entity.Product">
     update product
     <set>
       <if test="name != null">
@@ -196,7 +196,7 @@
     </set>
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Product">
+  <update id="updateByPrimaryKey" parameterType="com.yiluyouni.cloud.entity.Product">
     update product
     set name = #{name,jdbcType=VARCHAR},
       price = #{price,jdbcType=VARCHAR}

@@ -1,10 +1,10 @@
 package com.yiluyouni.cloud.idworker.strategy;
 
-import org.n3r.idworker.WorkerIdStrategy;
-import org.n3r.idworker.utils.HttpReq;
-import org.n3r.idworker.utils.Ip;
-import org.n3r.idworker.utils.Props;
-import org.n3r.idworker.utils.Utils;
+import com.yiluyouni.cloud.idworker.WorkerIdStrategy;
+import com.yiluyouni.cloud.idworker.utils.HttpReq;
+import com.yiluyouni.cloud.idworker.utils.Ip;
+import com.yiluyouni.cloud.idworker.utils.Props;
+import com.yiluyouni.cloud.idworker.utils.Utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

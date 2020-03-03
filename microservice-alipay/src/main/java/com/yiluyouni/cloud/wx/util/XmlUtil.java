@@ -1,9 +1,9 @@
 package com.yiluyouni.cloud.wx.util;
 
-import com.sihai.wx.entity.PayResult;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
 import com.thoughtworks.xstream.io.xml.XmlFriendlyNameCoder;
+import com.yiluyouni.cloud.wx.entity.PayResult;
 
 import java.io.InputStream;
 

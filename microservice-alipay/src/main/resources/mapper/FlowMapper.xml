@@ -125,7 +125,7 @@
       create_time = #{createTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <resultMap id="BaseResultMap" type="com.yiluyouni.cloud.microserviceuser.entity.Flow">
+  <resultMap id="BaseResultMap" type="com.yiluyouni.cloud.entity.Flow">
     <id column="id" jdbcType="VARCHAR" property="id" />
     <result column="flow_num" jdbcType="VARCHAR" property="flowNum" />
     <result column="order_num" jdbcType="VARCHAR" property="orderNum" />
@@ -148,7 +148,7 @@
     delete from flow
     where id = #{id,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Flow">
+  <insert id="insert" parameterType="com.yiluyouni.cloud.entity.Flow">
     insert into flow (id, flow_num, order_num, 
       product_id, paid_amount, paid_method, 
       buy_counts, create_time)
@@ -156,7 +156,7 @@
       #{productId,jdbcType=VARCHAR}, #{paidAmount,jdbcType=VARCHAR}, #{paidMethod,jdbcType=INTEGER}, 
       #{buyCounts,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Flow">
+  <insert id="insertSelective" parameterType="com.yiluyouni.cloud.entity.Flow">
     insert into flow
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -211,7 +211,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Flow">
+  <update id="updateByPrimaryKeySelective" parameterType="com.yiluyouni.cloud.entity.Flow">
     update flow
     <set>
       <if test="flowNum != null">
@@ -238,7 +238,7 @@
     </set>
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Flow">
+  <update id="updateByPrimaryKey" parameterType="com.yiluyouni.cloud.entity.Flow">
     update flow
     set flow_num = #{flowNum,jdbcType=VARCHAR},
       order_num = #{orderNum,jdbcType=VARCHAR},
@@ -249,7 +249,7 @@
       create_time = #{createTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <resultMap id="BaseResultMap" type="com.yiluyouni.cloud.microserviceuser.entity.Flow">
+  <resultMap id="BaseResultMap" type="com.yiluyouni.cloud.entity.Flow">
     <id column="id" jdbcType="VARCHAR" property="id" />
     <result column="flow_num" jdbcType="VARCHAR" property="flowNum" />
     <result column="order_num" jdbcType="VARCHAR" property="orderNum" />
@@ -272,7 +272,7 @@
     delete from flow
     where id = #{id,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Flow">
+  <insert id="insert" parameterType="com.yiluyouni.cloud.entity.Flow">
     insert into flow (id, flow_num, order_num, 
       product_id, paid_amount, paid_method, 
       buy_counts, create_time)
@@ -280,7 +280,7 @@
       #{productId,jdbcType=VARCHAR}, #{paidAmount,jdbcType=VARCHAR}, #{paidMethod,jdbcType=INTEGER}, 
       #{buyCounts,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Flow">
+  <insert id="insertSelective" parameterType="com.yiluyouni.cloud.entity.Flow">
     insert into flow
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -335,7 +335,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Flow">
+  <update id="updateByPrimaryKeySelective" parameterType="com.yiluyouni.cloud.entity.Flow">
     update flow
     <set>
       <if test="flowNum != null">
@@ -362,7 +362,7 @@
     </set>
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.yiluyouni.cloud.microserviceuser.entity.Flow">
+  <update id="updateByPrimaryKey" parameterType="com.yiluyouni.cloud.entity.Flow">
     update flow
     set flow_num = #{flowNum,jdbcType=VARCHAR},
       order_num = #{orderNum,jdbcType=VARCHAR},
